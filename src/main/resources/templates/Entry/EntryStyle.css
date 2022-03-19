@@ -1,0 +1,71 @@
+
+
+.cap{
+    top : 0;
+    left:0;
+    color: bisque;
+    height:200px;
+    width:70%;
+    position:absolute;
+    background-color:orange;
+}
+
+.gitRef{
+    position:absolute;
+    left:50%;
+    top:70%;
+    border: 10px black;
+    color:yellow;
+    background-color: aqua;
+}
+
+.login{
+    position:absolute;
+    right:0;
+    top:0;
+    color:yellow;
+    background-color: mistyrose;
+    height:200px;
+    width:30%;
+}
+.LeftNavigation{
+    position:relative;
+    left:0
+
+}
+
+
+
+.FiringEmblemOnTheRightOfFooter{
+    position:fixed;
+    top:90%;
+    left:90%;
+    width:150px;
+    height:150px;
+    background-color: #e81010;
+    color:yellow;
+
+
+}
+
+.FiringEmblemOnTheRightOfFooter::before , .FiringEmblemOnTheRightOfFooter::after{
+    content: '';
+    position:absolute;
+    top:20%;
+    height:30px;
+    width:30px;
+    background:#000;
+    animation: eye 3s ease-in-out infinite;;
+}
+
+.FiringEmblemOnTheRightOfFooter::after{
+    left:20%;
+}
+.FiringEmblemOnTheRightOfFooter::before{
+    right:20%;
+}
+
+@keyframes eye {
+    90% { transform: none; }
+    95% { transform: scaleY(0.1); }
+}
